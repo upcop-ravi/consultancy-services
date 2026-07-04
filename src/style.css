@@ -1,0 +1,115 @@
+/* Global styles */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(135deg, #0A66C2, #00A0DC);
+  color: #ffffff;
+}
+
+.login-card {
+  /* Slightly stronger glass effect with teal hue */
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-card h1 {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #212121;
+  font-size: 1rem;
+  transition: background 0.2s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  font-size: 0.85rem;
+}
+
+.options a {
+  color: #80deea;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.options a:hover {
+  opacity: 1;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.85rem;
+  border: none;
+  border-radius: 8px;
+  background: hsl(190, 70%, 45%);
+  /* vibrant teal */
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s, box-shadow 0.2s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.login-btn:hover {
+  background: hsl(190, 70%, 52%);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.login-btn:active {
+  transform: scale(0.97);
+}
+
+.message {
+  margin-top: 1rem;
+  min-height: 1.2rem;
+  font-size: 0.95rem;
+  opacity: 0.95;
+  color: #cfd8dc;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 1.5rem 1.8rem;
+    max-width: 95%;
+  }
+}
